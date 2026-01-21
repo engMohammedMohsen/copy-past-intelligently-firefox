@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إعدادات الإضافة</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+
+  <body>
+    <h1 class="h1">إعدادات النسخ واللصق الذكي</h1>
+
+    <div class="frame">
+      <h2 class="h2">إعدادات اللصق</h2>
+
+      <div class="option">
+        <label for="IntelgentPast" class="label"
+          ><input type="checkbox" id="chk_smartPast" class="chkbox" />
+          اللصق الذكي
+        </label>
+      </div>
+    </div>
+
+    <div class="frame">
+      <h2 class="h2">إعدادات النسخ</h2>
+
+      <div class="option">
+        <label for="formatCopy" class="label" style="margin-bottom: 5px">
+          <input type="checkbox" id="chk_formatCopy" class="chkbox" />
+          تنسيق النسخ
+        </label>
+        <div>
+          <textarea id="txt_format" class="txtArea"></textarea>
+        </div>
+        <div style="text-align: center" class="label">
+          <label style="font-size: 15px">
+            للتنسيق استخدم <span dir="ltr" class="highlight">$url</span> و
+            <span dir="ltr" class="highlight">$title</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <script src="options.js"></script>
+  </body>
+
+  <footer>
+    <h2 class="h2">
+      <a href="CHANGLOG.html" target="_blank" class="link">سجل الإصدارات </a>
+    </h2>
+  </footer>
+</html>

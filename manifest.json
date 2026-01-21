@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "Tab and Clipboard Management Tool",
+  "version": "1.0.5",
+  "description": "A tool for managing tabs and clipboard URLs with advanced features. like format copy or smart past links",
+  "permissions": ["tabs", "clipboardRead", "clipboardWrite", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "64": "icons/icon-64.png",
+      "96": "icons/icon-96.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "commands": {
+    "copy-all-tabs": {
+      "suggested_key": {
+        "default": "Alt+C",
+        "mac": "Command+Shift+C"
+      },
+      "description": "Copy all tabs"
+    },
+    "paste-urls": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+V",
+        "mac": "Command+Shift+V"
+      },
+      "description": "Paste URLs"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "tab-clipboard-manager@example.com"
+    }
+  }
+}

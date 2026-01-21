@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab & Clipboard Manager</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body class="body" id="kk">
+    <div class="container">
+      <button id="copy-all-tabs" class="button">نسخ</button>
+      <button id="paste-urls" class="button">لصق</button>
+    </div>
+    <button id="reverse-paste-urls" class="button">لصق المواقع بالعكس</button>
+    <button id="random-single-url" class="button">لصق موقع عشوائي</button>
+    <button id="random-all-urls" class="button">لصق المواقع عشوائياً</button>
+    <hr style="border-top: dotted 2px" />
+    <div>
+      <a
+        href="options.html"
+        target="_blank"
+        dir="rtl"
+        style="
+          font-weight: 500;
+          font-size: 14px;
+          color: black;
+          text-decoration-line: none;
+        "
+      >
+        الإعدادات</a
+      >
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
